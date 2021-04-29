@@ -1,0 +1,27 @@
+.ancho{
+    height: 300px;
+}
+
+.propiedades{
+    margin-top: 100px;
+}
+
+label{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    width: 100px;;
+}
+
+.inp{
+    width: 300px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.btn-size{
+    width: 100px;
+}

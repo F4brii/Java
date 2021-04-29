@@ -1,0 +1,22 @@
+<!-- <div class="spinner-border" role="status" *ngIf="loading">
+    <span class="sr-only">Loading...</span>
+</div> -->
+<br />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Actividad</th>
+            <th scope="col">Tiempo (H)</th>
+            <th scope="col">Fecha registro</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Actividad of Actividades">
+            <th scope="row">{{ Actividad.id }}</th>
+            <td>{{ Actividad.nombre }}</td>
+            <td>{{ Actividad.tiempo }}</td>
+            <td>{{ Actividad.fechaRegistro }}</td>
+        </tr>
+</table>

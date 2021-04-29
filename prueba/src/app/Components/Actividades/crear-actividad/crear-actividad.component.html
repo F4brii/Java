@@ -1,0 +1,30 @@
+<div class="w3-container">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue">Crear
+        Actividad</button>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container ">
+                <div class="propiedades">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                    <div class="container-fluid ancho">
+                        <h1>Crear Actividad</h1>
+                        <label>Nombre: </label>
+                        <input class="inp" type="text" placeholder="Nombre" #NombreActividad >
+                        <br>
+                        <label>tiempo: </label>
+                        <input class="inp" type="number" placeholder="tiempo" #TiempoActividad >
+                        <br>
+                        <button class="btn btn-primary btn-size" (click)="crearComponente(NombreActividad.value, TiempoActividad.value)">
+                            Crear
+                        </button>
+                        <button class="btn btn-primary btn-size"  (click)="cancelarComponente()">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
